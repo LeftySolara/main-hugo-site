@@ -1,0 +1,9 @@
+subtitle = "Julianne Adams' Website and Blog"
+githubLink = "https://github.com/leftysolara"
+linkedinLink = "https://linkedin.com/in/julianneadams"
+twitterLink = "https://twitter.com/leftysolara"
+favicon = "favicon.ico"
+
+[contact]
+  name = "Julianne Adams"
+  email = "julianne@julianneadams.dev"

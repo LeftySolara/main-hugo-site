@@ -1,0 +1,3 @@
+[submodule "themes/jules"]
+	path = themes/jules
+	url = https://github.com/LeftySolara/Jules-Hugo-Theme.git
