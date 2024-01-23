@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: "2024-01-23T09:12:27-05:00"
-summary: ""
+summary: "An introduction to this blog."
 tags: ["welcome"]
 draft: false
 ---
