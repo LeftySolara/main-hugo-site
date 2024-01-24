@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>
+  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
+  site.Title }}{{ end }}
+</title>
+
+{{ template "_internal/google_analytics.html" . }}
+
+<link rel="stylesheet" href="/css/syntax-highlight.css" />
+
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
+
+<!--
+Transpile our sass files to CSS.
+If running in production, minify and hash the CSS before linking it.
+-->
+{{ with resources.Get "sass/main.scss" }} {{ $opts := dict "transpiler"
+"dartsass" "targetPath" "css/style.css" }} {{ with . | toCSS $opts }} {{ if
+hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" />
+{{ else }} {{ with . | minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ .RelPermalink }}"
+  integrity="{{ .Data.Integrity }}"
+  crossorigin="anonymous"
+/>
+{{ end }} {{ end }} {{ end }} {{ end }}
+
+<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
