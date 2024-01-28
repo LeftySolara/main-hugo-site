@@ -4,7 +4,7 @@ date: "2024-01-28T16:00:56-05:00"
 series: "Pantomime Dev Diaries"
 summary: "An introduction to a series of development diaries for my MPD client project, Pantomime."
 tags: ["pantomime", "software-development", "dev-diary"]
-draft: true
+draft: false
 ---
 
 Hello and welcome to the very first installment of a series of development diaries for my project, Pantomime. Throughout these posts, we will be delving deep into the creation process of Pantomime, thoroughly documenting the project's successes and setbacks along the way.
