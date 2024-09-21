@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h2>Projects</h2>
+<p>
+  This is a collection of some of my programming projects. These are mostly just
+  the ones I learned the most from and had the most fun with. To see all of my
+  projects, please visit my
+  <a href="{{ .Site.Params.githubLink }}">GitHub profile</a>.
+</p>
+{{ $projects := .Param "projects" }}
+{{ range $projects }}
+  {{ range .}}
+    {{ partial "project.html" (dict "title" .title "description" .description "tech" .tech "link" .link "imageFile" .image "last" .last) }}
+  {{ end }}
+{{ end }}
+{{ end }}

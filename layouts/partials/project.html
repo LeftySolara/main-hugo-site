@@ -1,0 +1,12 @@
+<div class="project__container">
+  <img src="{{ .imageFile }}" class="project__image" />
+  <div class="project__content">
+    <h3>{{ .title }}</h3>
+    <p>{{ .description }}</p>
+    <p>Technologies used: {{ .tech }}</p>
+    <a href="{{ .link }}">View the code</a>
+  </div>
+</div>
+{{ if not .last }}
+<hr class="project__divider"/>
+{{ end }}
