@@ -4,3 +4,8 @@ title = 'The Other Side of the IDE'
 theme = "jules"
 copyright = "© Julianne Adams 2024"
 
+[outputs]
+home = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
